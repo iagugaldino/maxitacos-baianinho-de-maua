@@ -1,0 +1,497 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+
+/* ------------------------------------------- */
+/* Estilos do Temporizador (Faixa de Oferta) */
+/* ------------------------------------------- */
+.oferta-disponivel-container {
+    background-image: linear-gradient(to right, #000, #000);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 100px;
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.frete-caixa-img {
+    height: 20px;
+    width: auto;
+}
+
+.oferta-texto {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+}
+
+.oferta-texto b {
+    font-weight: 600;
+}
+
+.title-home {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+    justify-content: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#countdown {
+    font-weight: 700;
+    color: yellow;
+}
+
+/* ------------------------------------------- */
+/* Cabeçalho com duas cores de fundo */
+/* ------------------------------------------- */
+.frete-gratis-container {
+    background-color: #6900cc;
+}
+
+.frete-gratis {
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.frete-gratis h2 {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+}
+
+.main-header-container {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    border-bottom: 1px solid #D1D5DB;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 10px 20px;
+}
+
+.voltar-link, .cart-icon {
+    display: none;
+}
+
+.logo-img {
+    max-width: 180px;
+    display: block;
+}
+
+.menu-icon {
+    width: 15px;
+    height: auto;
+}
+
+/* ------------------------------------------- */
+/* Seção de Banners e Produtos */
+/* ------------------------------------------- */
+.banner-container {
+    width: 100%;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Banner promocional específico (3.webp) */
+.banner-promo-container {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.banner-promo-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .banner-promo-container {
+        max-width: 1200px;
+        margin: 0 auto 40px auto;
+        padding: 0;
+    }
+    
+    .banner-promo-image {
+        border-radius: 12px;
+    }
+}
+
+.product-header {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.product-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.product-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-item {
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    row-gap: 5px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0px;
+}
+
+.offer-badge {
+    background-color: #000;
+    align-items: center;
+    color: #fff;
+    padding: 0px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.restam-1 {
+    background-color: #cbffc7;
+    align-items: center;
+    color: #48842f;
+    padding: 0px 8px;
+    border-radius: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.restam-2 {
+    background-color: #ffffc7;
+    align-items: center;
+    color: #847900;
+    padding: 0px 8px;
+    border-radius: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.restam-3 {
+    background-color: #ffdcdc;
+    align-items: center;
+    color: #ff2e2e;
+    padding: 0px 8px;
+    border-radius: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.restam-4 {
+    background-color: #ff0000;
+    align-items: center;
+    color: #FFF;
+    padding: 0px 8px;
+    border-radius: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1e293b;
+    margin: 0 0 5px 0;
+}
+
+.product-original-price {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.product-promo-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 6px;
+    margin-bottom: 0px;
+}
+
+.full-section {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2px;
+    margin-bottom: 0px;
+}
+
+.discount-badge {
+    color: #03a13d;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.full {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4caf50;
+}
+
+.full-img {
+    width: 18px;
+    height: auto;
+}
+
+/* ------------------------------------------- */
+/* Rodapé com menus organizados */
+/* ------------------------------------------- */
+.footer-container {
+    background-color: #f8f9fa;
+    padding: 40px 20px 20px 20px;
+    color: #333;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #D1D5DB;
+    margin-bottom: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.footer-subtitle {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #666;
+    cursor: default;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    .footer-container {
+        padding: 30px 20px 20px 20px;
+    }
+    
+    .footer-title {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .footer-list li {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+}
+
+/* ------------------------------------------- */
+/* Responsividade */
+/* ------------------------------------------- */
+/* Para telas de celular e tablets (até 768px) */
+@media (max-width: 768px) {
+    .oferta-disponivel-container {
+        width: calc(100% - 40px);
+    }
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-header {
+        justify-content: center;
+    }
+}
+/* Para telas de celular pequenas (até 480px) */
+@media (max-width: 480px) {
+    .oferta-texto, .oferta-texto b {
+        font-size: 12px;
+    }
+    .frete-gratis h2, .frete-gratis b {
+        font-size: 12px;
+    }
+    .offer-badge {
+        background-color: #8200ff;
+        align-items: center;
+        color: #fff;
+        padding: 0px 8px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .restam-1 {
+        background-color: #cbffc7;
+        align-items: center;
+        color: #48842f;
+        padding: 0px 8px;
+        border-radius: 0px;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .restam-2 {
+        background-color: #ffffc7;
+        align-items: center;
+        color: #847900;
+        padding: 0px 8px;
+        border-radius: 0px;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .restam-3 {
+        background-color: #ffdcdc;
+        align-items: center;
+        color: #ff2e2e;
+        padding: 0px 8px;
+        border-radius: 0px;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .product-promo-price {
+        font-size: 17px;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+    }
+    .discount-badge {
+        color: #03a13d;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+}
+
+/* Para telas de PC (a partir de 1024px) */
+@media (min-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 1200px;
+    }
+    .menu-icon {
+        display: none;
+    }
+    .main-header {
+        justify-content: center;
+    }
+}
