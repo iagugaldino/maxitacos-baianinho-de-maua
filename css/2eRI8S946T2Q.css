@@ -495,3 +495,24 @@ body {
         justify-content: center;
     }
 }
+
+
+
+
+.buy-button{
+    width:100%;
+    background:#2e6b2e;
+    color:white;
+    border:none;
+    padding:12px;
+    font-weight:700;
+    text-transform:uppercase;
+    border-radius:6px;
+    margin-top:10px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.buy-button:hover{
+    background:#245724;
+}
